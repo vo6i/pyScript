@@ -25,7 +25,8 @@
     htmlex = str(soup) 
     print(htmlex) 
 
-    links = soup.find_all("a")
+    links = soup.find_all("a") 
+    print(links) 
 
     linkDiv = document.getElementById("links")
     linkDiv.innerHTML = "<span>Links for " + url + "</span><br/><br/>"
