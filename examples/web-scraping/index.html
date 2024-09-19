@@ -19,7 +19,7 @@
 
     url = "https://midjourney.com"
     req = XMLHttpRequest.new()
-    req.open("GET", url, False)
+    req.open("GET", url, false)
     req.send(None)
     soup = BeautifulSoup(req.response, "html.parser")
 
