@@ -22,6 +22,8 @@
     req.open("GET", url, True)
     req.send(None)
     soup = BeautifulSoup(req.response, "html.parser")
+    htmlex = str(soup) 
+    print(htmlex) 
 
     links = soup.find_all("a")
 
